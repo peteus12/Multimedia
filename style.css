@@ -1,0 +1,67 @@
+/* CSS Document */
+body{font-family: segoe UI;
+	font-size: 14px;
+	Color: #000;
+	}
+	
+header {
+	background-color:#343434;}
+#sec-slides{
+	background-image: url(img/slider-1.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	color: white;
+	padding: 70px 0px;}
+
+#sec-slides h4{ font-size: 34px;
+	text-transform: uppercase;
+} 
+#sec-slides h2{ font-size: 64px;
+	text-transform: uppercase;
+} 
+#sec-slides p{ font-size: 18px;
+	margin-top: 40px;
+	margin-bottom: 60px
+} 
+
+
+#sec-slides p{ font-size: 18px;
+	margin-top: 40px;
+	margin-bottom: 60px
+} 
+#sec-slides a{ text-transform: uppercase;
+} 
+
+
+#sec-slides .btn-warning {background-color: #e7931a;
+border: 0;}
+
+#sec-slides .btn-warning:hover {background-color: #343434;}
+
+#sec-slides .btn-default{background-color: transparent;
+	border-width: 2px;
+	color: #fff;
+	
+	
+}
+#sec-slides .btn-default:hover{
+	background-color: #e7931a;
+	background-color: #e7931a;
+}
+
+.title{ font-size: 45px;
+	color: #000;
+	text-align: center;
+	font-weight: 700px;
+	
+	}
+#sec-services h4{
+	text-transform: uppercase;
+	color: #000;
+	font-size: 24px;
+	font-weight: 700px;
+	}
+
+
+
