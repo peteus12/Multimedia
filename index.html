@@ -2,64 +2,283 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>index</title>
+<title>Bakery</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="style.css" rel="stylesheet">
+<link href="css/bootstrap-custom.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+
+<meta name="description" content="Bakery es un sitio donde podrás encontrar información de recetas de cocina, artículos de ínteres, información de chefs, entre otros">
+<meta name="keywords" content="cemitas, baleadas, repostería, recetas de cocina, recetas de la abuela, chefs, comida, cocina, recetas, postres, bakery, sitio información de recetas de cocina, tegucigalpa, honduras, centro américa">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110117649-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110117649-1');
+</script>
+
 </head>
 
 <body>
-	<header>
-		<div class="container">
-		<img src= "img/bakery-logo.png" width="100px">
-		</div>
-		
-		
-		
-	</header>
-	<section id= "sec-slides">
 
-		<div class="container text-center">
-			<h4>THE BEST PLACE FOR THE FINEST</h4>
-		<h2>BREADS AND CAKES</h2>
-			<p>We strive for consistency so that each visit to our bakery delivers the same reliably satisfying experience while offering an exciting variety of products.</p>
-			<a href="#" class="btn-warning btn-lg">Our Benefits</a>
-			<a href="#" class="btn-default btn-lg" >Virtual Tour</a>
-			
-		</div>
-	</section>
-	<section id="sec-services">
-	<div class="container">
-		<h2>Main Services</h2>
-		<div class="row">
-		</div>
-		<article class="col-md-3 col-sm-6 col-xs-12"
-		<img src="img/wedding-cakes.jpg"
-		class= "img-responsive">
+<header>
+	<!--<div class="container">
+		<img src="img/bakery-logo.png" width="100px">
+	</div>-->
+	<nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="img/bakery-logo.png" width="60px"></a>
+                </div>
+            
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="nav">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+</header>
+
+
+<section id="sec-slides">
+<!--<div class="container text-center">
+		<h4>the best place for the finest</h4>
+		<h2>breads and cakes</h2>
+		<p>We strive for consistency so that each visit to our bakery delivers the same reliably satisfying experience while offering an exciting variety of products. </p>
+		<a href="#" class="btn btn-warning btn-lg">Our Benefits</a>
+		<a href="#" class="btn btn-default btn-lg">Virtual Tour</a>
+	</div>-->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators hidden">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="img/slider-1.jpg" alt="Bakery Slide">
+      <div class="carousel-caption">
+      	<h4>the best place for the finest</h4>
+		<h2>breads and cakes</h2>
+		<p class="hidden-xs">We strive for consistency so that each visit to our bakery delivers the same reliably satisfying experience while offering an exciting variety of products. </p>
+		<a href="#" class="btn btn-warning btn-lg hidden-xs">Our Benefits</a>
+		<a href="#" class="btn btn-default btn-lg hidden-xs">Virtual Tour</a>
+	  </div>
+    </div>
+
+    <div class="item">
+      <img src="img/slider-2.jpg" alt="Bakery Slide">
+      <div class="carousel-caption">
+      	<h4>the best place for the finest</h4>
+		<h2>breads and cakes</h2>
+		<p>We strive for consistency so that each visit to our bakery delivers the same reliably satisfying experience while offering an exciting variety of products. </p>
+		<a href="#" class="btn btn-warning btn-lg">Our Benefits</a>
+		<a href="#" class="btn btn-default btn-lg">Virtual Tour</a>
+	  </div>
+    </div>
+
+    <div class="item">
+      <img src="img/slider-3.jpg" alt="Bakery Slide">
+      <div class="carousel-caption">
+      	<h4>the best place for the finest</h4>
+		<h2>breads and cakes</h2>
+		<p>We strive for consistency so that each visit to our bakery delivers the same reliably satisfying experience while offering an exciting variety of products. </p>
+		<a href="#" class="btn btn-warning btn-lg">Our Benefits</a>
+		<a href="#" class="btn btn-default btn-lg">Virtual Tour</a>
+	  </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</section>
+
+
+<section id="sec-services" class="section">
+<div class="container">
+	<h2 class="title">Main services</h2>
+	
+	<div class="row text-center">
+		
+		<article class="col-md-3 col-sm-6 col-xs-12">
+			<img src="img/wedding-cakes.jpg" class="img-responsive">
 			<h4>Wedding Cakes</h4>
-		<p> Whether you are looking for a traditional style or a contemporary creation, our decorators can meet your individual needs.</p>
-			
+			<p>Whether you are looking for a traditional style or a contemporary creation, our decorators can meet your individual needs.</p>
+		</article>
+		
+		<article class="col-md-3 col-sm-6 col-xs-12">
+			<img src="img/our-breads.jpg" class="img-responsive">
+			<h4>Our Breads</h4>
+			<p>The unique flavors and textures of our breads come from the use of natural starters, minimal commercial yeast, and a slow fermentation process..</p>
+		</article>
+		
+		<article class="col-md-3 col-sm-6 col-xs-12">
+			<img src="img/best-cookies.jpg" class="img-responsive">
+			<h4>best Cookies</h4>
+			<p>Is there really anything more satisfying than a great cookie? We don't think so and when you try ours we think you'll agree.</p>
+		</article>
+		
+		<article class="col-md-3 col-sm-6 col-xs-12">
+			<img src="img/tarts-pies.jpg" class="img-responsive">
+			<h4>Tarts and Pies</h4>
+			<p>Everyone loves the elegance of a tart or pie. We offer bite-sized tartlettes for a quick sweet treat or large dramatic tarts and pies.</p>
+		</article>
+	
+	</div>
 
+</div>
+</section>
+
+
+<section id="sec-counters" class="section">
+<div class="container">
+	
+	<h2 class="title">Counters</h2>
+	<div class="row">
 		
+		<article class="col-md-3 col-sm-6 col-xs-12">
+			<h3>78</h3>
+			<p>Wedding cakes</p>
+		</article>
 		
+		<article class="col-md-3 col-sm-6 col-xs-12">
+			<h3>23</h3>
+			<p>Artisan breads</p>
+		</article>
 		
+		<article class="col-md-3 col-sm-6 col-xs-12">
+			<h3>7</h3>
+			<p>Custom cakes</p>
+		</article>
 		
+		<article class="col-md-3 col-sm-6 col-xs-12">
+			<h3>374</h3>
+			<p>Tarts and pies</p>
+		</article>
+	
+	</div>
+	
+	
+</div>
+</section>
+
+
+<section id="sec-clients" class="section">
+<div class="container">
+	<h2 class="title">Our grateful clients</h2>
+	
+	<div class="row">
 		
+		<article class="col-md-6 col-sm-12 col-xs-12">
+			
+			<div class="row">
+				
+				<article class="col-md-3 col-sm-6 col-xs-12">
+					<img src="img/partner-1.png" class="img-responsive center-block">
+				</article>
+				<article class="col-md-9 col-sm-6 col-xs-12">
+					<h4>Tourner</h4>
+					<a href="#">www.tourner.com</a>
+					<p>We are awed by human resilience, and believe in the ability of all people to thrive, not just exist.</p>
+				</article>
+			
+			</div>
+			
+			
+		</article>
 		
+		<article class="col-md-6 col-sm-12 col-xs-12">
+			
+			<div class="row">
+				
+				<article class="col-md-3 col-sm-6 col-xs-12">
+					<img src="img/partner-2.png" class="img-responsive center-block">
+				</article>
+				<article class="col-md-9 col-sm-6 col-xs-12">
+					<h4>Frank`s Co.</h4>
+					<a href="#">www.franksco.com</a>
+					<p>We are open and transparent about the work we do and how we do it.</p>
+				</article>
+			
+			</div>
+		</article>
 		
+	
+	</div>
+	
+	<div class="row">
 		
-		</section>
-		</div>
+		<article class="col-md-6 col-sm-12 col-xs-12">
+			
+			<div class="row">
+				
+				<article class="col-md-3 col-sm-6 col-xs-12">
+					<img src="img/partner-1.png" class="img-responsive center-block">
+				</article>
+				<article class="col-md-9 col-sm-6 col-xs-12">
+					<h4>Tourner</h4>
+					<a href="#">www.tourner.com</a>
+					<p>We are awed by human resilience, and believe in the ability of all people to thrive, not just exist.</p>
+				</article>
+			
+			</div>
+			
+			
+		</article>
+		
+		<article class="col-md-6 col-sm-12 col-xs-12">
+			
+			<div class="row">
+				
+				<article class="col-md-3 col-sm-6 col-xs-12">
+					<img src="img/partner-2.png" class="img-responsive center-block">
+				</article>
+				<article class="col-md-9 col-sm-6 col-xs-12">
+					<h4>Frank`s Co.</h4>
+					<a href="#">www.franksco.com</a>
+					<p>We are open and transparent about the work we do and how we do it.</p>
+				</article>
+			
+			</div>
+		</article>
+		
 	
-	
-	
-	
-	
-	
-	
-	
-	
+	</div>
+</div>
+</section>
+
+
 	<script src="js/jquery.min.js"></script>
-	<script scr="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>
